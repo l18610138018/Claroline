@@ -1,0 +1,25 @@
+git clone http://github.com/claroline/Claroline
+cd Claroline
+php scripts/configure.php
+composer update --prefer-dist --no-dev
+
+npm install
+composer build
+
+php app/console claroline:install
+
+php app/console claroline:user:create -a John Doe admin pass admin@test.com
+
+
+php app/console claroline:user:create -a John Doe admin pass admin@test.com
+
+chown -R www-data:www-data ../claroline
+
+
+
+## replace file
+packages/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh.js
+
+
+
+dist/langs/zh.js
